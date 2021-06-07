@@ -1,5 +1,5 @@
 const loaderContainer = document.querySelector('.loader');
-const mainContainer = document.querySelector('.main-content');
+const mainContainer = document.querySelector('.main');
 
 function stopLoader() {
   setTimeout(() => {
