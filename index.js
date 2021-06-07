@@ -15,4 +15,4 @@ function stopLoader() {
     }, 2000);
   }, 3000);
 }
-stopLoader();
+// stopLoader();
