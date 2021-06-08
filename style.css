@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+  --main-text-color: #fff;
+}
 
 html {
   height: 100%;
   font-family: 'Noto Sans JP', sans-serif;
 }
+body {
+  margin: 0;
+}
 
 .loader {
-  display: block;
+  display: none;
   position: absolute;
   top: calc(50% - 190px);
   left: calc(50% - 150px);
@@ -36,13 +42,56 @@ html {
   display: inline-block;
 }
 
+/* main content */
 .main {
-  display: none;
-  opacity: 0;
+  display: block;
+  opacity: 1;
   transition: 1s;
 }
 
-/*  header menu */
+/* head part */
+.head__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111111e6;
+  position: fixed;
+  width: 100%;
+}
+.head__menu ul {
+  margin-right: 50px;
+  cursor: default;
+}
+
+.head__menu li {
+  list-style: none;
+  display: inline;
+  margin: 0 15px;
+}
+.head__menu a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.head__logo {
+  margin-left: 50px;
+  padding: 5px 0;
+}
+
+.head__picture {
+  background: url(/src/north.jpg);
+  background: url(/src/north.jpg);
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* modifiers */
+
+.btn--hover {
+  font-size: 1.5rem;
+}
 
 /*  animations */
 @keyframes lol {
