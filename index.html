@@ -9,7 +9,13 @@
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="media.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Noto+Sans+HK:wght@300&display=swap"
+        rel="stylesheet">
     <!-- <link rel="icon" href="./src/yerevan_logo2.jpg" type="image/icon type"> -->
 
     <title>Yerevan Page</title>
@@ -157,21 +163,91 @@
     <!-- content -->
     <div class='main'>
         <header>
-            <nav class='head__menu'>
-                <div class='head__logo'><a href="index.html" style='display: block;'><img width='100' src="src/logo.png"
-                            alt="Yerevan"></a></div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Places</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <div class='head__picture'>
+            <div class='head'>
+                <div class="head__menu-container">
+                    <nav class='head__menu'>
+                        <div class='head__logo'><a class="head__logo__link" href="index.html" style='display: block;'>
+                                <img class="head__logo__image" width='100' src="src/logoLigth.png" alt="Yerevan">
+                                <img class="head__logo__image--reverse" width='100' src="src/logoLigthReverse.png"
+                                    alt="Yerevan">
 
+                            </a></div>
+                        <ul class=" head__menu__ul">
+                            <li class="head__menu__li"><a class="head__menu__link" href="#">Home</a></li>
+                            <li class="head__menu__li"><a class="head__menu__link" href="#">History</a></li>
+                            <li class="head__menu__li"><a class="head__menu__link" href="#">Places</a></li>
+                            <li class="head__menu__li"><a class="head__menu__link" href="#">Contact</a></li>
+                            <li class="head__menu__li"><a class="head__menu__link" href="#">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class='greeting-block'>
+                    <div class="greeting-block__content">
+                        <h1 class="greeting-block__header">Welcome to Yerevan</h1>
+
+                    </div>
+                </div>
             </div>
         </header>
+        <div class="presentation">
+            <div class="presentation__row">
+                <div class="presentation__block">
+                    <div class='presentation__logo'><img src="./src/tamanyan.jpg" alt="Tamanyan Statue" height="150">
+                    </div>
+                    <div>
+                        <h2 class='presentation__header'>Alexander Tamanyan</h2>
+                    </div>
+                    <div>
+                        <p class='presentation__description'>Tamanian created the first general plan of the modern city
+                            of Yerevan which was approved in 1924. He played a major role in the development of
+                            restoration projects of historical landmarks in the country.
+                        </p>
+                    </div>
+                </div>
+                <div class="presentation__block">
+                    <div class='presentation__logo'><img src="./src/inside-the-matenadaran.jpg" alt="Matenadaran"
+                            height="150"></div>
+                    <div>
+                        <h2 class='presentation__header'>Matenadaran</h2>
+                    </div>
+                    <div>
+                        <p class='presentation__description'>Currently, the Matenadaran contains a total of some 23,000
+                            manuscripts and scrolls—including fragments. It is, by far, the single largest collection
+                            of
+                            Armenian manuscripts in the world.
+                        </p>
+                    </div>
+                </div>
+                <div class="presentation__block">
+                    <div class='presentation__logo'><img src="\src/motherArmenia.jpg" alt="Mother Armenia" height="150">
+                    </div>
+                    <h2 class='presentation__header'>Mother Armenia statue</h2>
+                    <p class='presentation__description'>The Mother Armenia statue symbolizes peace through strength.Its
+                        location on a hill overlooking Yerevan makes it look like a guardian of the Armenian capital.
+                    </p>
+                </div>
+            </div>
+            <div class="presentation__container">
+                <div class="presentation__information">
+                    <div class="presentation__information__image">
+                        <img src="./src/modernCar.jpg" alt="" srcset="">
+                    </div>
+                    <div class="presentation__information__details">
+                        <div class="presentation__information__header">
+                            <h2>About Project</h2>
+                        </div>
+                        <div class="presentation__information__story">
+                            <p>Our team wants to present Yerevan to humanity not from a business point of view, but as a
+                                city loved by all Armenians. We wanted to create a project that has nothing to do with
+                                tourism, will try to give some information about Yerevan city.
+                                I hope you will like our project.</p>
+                        </div>
+                        <div class="presentation__information__button"><button type="button">Read more</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=""></div>
     </div>
     <script src="index.js"></script>
 </body>

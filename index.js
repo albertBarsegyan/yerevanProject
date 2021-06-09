@@ -1,5 +1,7 @@
+// page loader contents
 const loaderContainer = document.querySelector('.loader');
 const mainContainer = document.querySelector('.main');
+// page logo parts
 
 function stopLoader() {
   setTimeout(() => {
@@ -15,5 +17,4 @@ function stopLoader() {
     }, 2000);
   }, 3000);
 }
-stopLoader();
-const p = 100;
+// stopLoader();
