@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-  --main-text-color: #fff;
+  --main-color: #f009c0;
+  --main-color-light: #f252d2;
+  --third-color-dark: #bd0898;
 }
 
 html {
   height: 100%;
-  font-family: 'Noto Sans JP', sans-serif;
+  /* font-family: 'Noto Sans JP', sans-serif; */
+
+  font-family: 'Noto Sans HK', sans-serif;
+  font-size: 16px;
 }
 body {
   margin: 0;
@@ -50,41 +55,72 @@ body {
 }
 
 /* head part */
-.head__menu {
+
+.head {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #111111e6;
-  position: fixed;
-  width: 100%;
-}
-.head__menu ul {
-  margin-right: 50px;
-  cursor: default;
-}
-
-.head__menu li {
-  list-style: none;
-  display: inline;
-  margin: 0 15px;
-}
-.head__menu a {
-  text-decoration: none;
-  color: var(--main-text-color);
-}
-
-.head__logo {
-  margin-left: 50px;
-  padding: 5px 0;
-}
-
-.head__picture {
-  background: url(/src/north.jpg);
+  flex-direction: column;
+  justify-content: center;
   background: url(/src/north.jpg);
   height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.head__menu-container {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.head__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111111e6;
+  width: 60%;
+}
+.head__menu__ul {
+  margin-right: 50px;
+  cursor: default;
+}
+
+.head__menu__li {
+  list-style: none;
+  display: inline;
+  margin: 0 15px;
+}
+.head__menu__link {
+  text-decoration: none;
+  color: var(--main-color-light);
+  font-size: 1.2rem;
+}
+
+.head__logo {
+  margin-left: 20px;
+  padding: 5px 0;
+}
+.head__logo__link {
+  display: block;
+}
+.head__logo__image {
+  display: block;
+}
+
+.greeting-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: url(/src/north.jpg); */
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.greeting-block__header {
+  color: var(--main-color);
 }
 
 /* modifiers */

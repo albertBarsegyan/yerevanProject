@@ -16,4 +16,3 @@ function stopLoader() {
   }, 3000);
 }
 stopLoader();
-const p = 100;
