@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-  --main-color: #f009c0;
-  --main-color-light: #f252d2;
-  --third-color-dark: #bd0898;
+  --main-color: #f5427a;
+  --main-color-light: #f56e99;
+  --main-color-dark: #c2325d;
 }
 
 html {
   height: 100%;
-  /* font-family: 'Noto Sans JP', sans-serif; */
-
-  font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Noto Sans HK', sans-serif; */
   font-size: 16px;
 }
 body {
@@ -60,7 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(/src/north.jpg);
+  background: url(./src/cascadeFountain.jpg);
   height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,7 +68,6 @@ body {
 
 .head__menu-container {
   display: flex;
-  margin-top: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -78,8 +76,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #111111e6;
+  background-color: rgba(255, 255, 255, 0.95);
   width: 60%;
+  border-radius: 0 0 20px 20px;
 }
 .head__menu__ul {
   margin-right: 50px;
@@ -93,8 +92,12 @@ body {
 }
 .head__menu__link {
   text-decoration: none;
-  color: var(--main-color-light);
+  color: var(--main-color);
+  transition: 0.2s;
   font-size: 1.2rem;
+}
+.head__menu__link:hover {
+  color: var(--main-color-dark);
 }
 
 .head__logo {
@@ -121,6 +124,38 @@ body {
 
 .greeting-block__header {
   color: var(--main-color);
+}
+.presentation__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  position: relative;
+  bottom: 100px;
+}
+
+.presentation__block {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-color-light);
+}
+.presentation__header {
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+.presentation__description {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+}
+.presentation__logo > img {
+  border-radius: 50%;
 }
 
 /* modifiers */
