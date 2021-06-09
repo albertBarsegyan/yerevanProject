@@ -3,6 +3,7 @@ const loaderContainer = document.querySelector('.loader');
 const mainContainer = document.querySelector('.main');
 // page logo parts
 
+// eslint-disable-next-line no-unused-vars
 function stopLoader() {
   setTimeout(() => {
     setTimeout(() => {
