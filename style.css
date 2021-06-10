@@ -65,7 +65,8 @@ body {
   height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .head__menu-container {
@@ -199,9 +200,11 @@ body {
 .presentation__information__image {
   width: 50%;
 }
-.presentation__information__image img {
-  width: 100%;
-  height: 100%;
+.presentation__information__image {
+  background-image: url(./src/modernCar.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .presentation__information__details {
   display: flex;
@@ -240,6 +243,77 @@ body {
   background: var(--white-text-color);
   color: var(--main-color-light);
   /* border: 1px solid var(--white-text-color); */
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gallery__content__items {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gallery__header {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 1.4rem;
+  margin: 0;
+}
+.gallery__story {
+  text-align: center;
+  font-size: 1.4rem;
+  width: 60%;
+  color: var(--main-color);
+}
+
+.gallery__pictures {
+  margin: 20px 0;
+  padding: 10px 20px;
+  width: 90%;
+  display: grid;
+  grid-template-areas:
+    'a b c'
+    'd e f g';
+  /* grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr); */
+}
+
+.gallery__container:nth-child(1) {
+  grid-area: a;
+  border: 1px solid red;
+}
+.gallery__container:nth-child(2) {
+  grid-area: b;
+}
+.gallery__container:nth-child(3) {
+  grid-area: c;
+}
+.gallery__container:nth-child(4) {
+  grid-area: d;
+}
+.gallery__container:nth-child(5) {
+  grid-area: e;
+}
+.gallery__container:nth-child(6) {
+  grid-area: f;
+}
+.gallery__container:nth-child(7) {
+  grid-area: g;
+}
+
+.gallery__container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* modifiers */
