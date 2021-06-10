@@ -229,26 +229,15 @@ body {
 .presentation__information__button {
   padding: 20px 0;
 }
-.presentation__information__button button {
-  background: transparent;
-  color: var(--white-text-color);
-  border: 1px solid white;
-  padding: 10px 20px;
-  font-size: 1.3rem;
-
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
-.presentation__information__button button:hover {
-  background: var(--white-text-color);
-  color: var(--main-color-light);
-  /* border: 1px solid var(--white-text-color); */
-}
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.gallery {
+  margin: 50px 0;
+}
+
 .gallery__content {
   display: flex;
   flex-direction: column;
@@ -280,34 +269,7 @@ body {
   padding: 10px 20px;
   width: 90%;
   display: grid;
-  grid-template-areas:
-    'a b c'
-    'd e f g';
-  /* grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(4, 1fr); */
-}
-
-.gallery__container:nth-child(1) {
-  grid-area: a;
-  border: 1px solid red;
-}
-.gallery__container:nth-child(2) {
-  grid-area: b;
-}
-.gallery__container:nth-child(3) {
-  grid-area: c;
-}
-.gallery__container:nth-child(4) {
-  grid-area: d;
-}
-.gallery__container:nth-child(5) {
-  grid-area: e;
-}
-.gallery__container:nth-child(6) {
-  grid-area: f;
-}
-.gallery__container:nth-child(7) {
-  grid-area: g;
+  /* grid-template-rows: 1fr 1fr; */
 }
 
 .gallery__container img {
@@ -315,11 +277,46 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.gallery__row1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.gallery__row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
 /* modifiers */
 
-.btn--hover {
-  font-size: 1.5rem;
+.btn--main {
+  background: transparent;
+  color: var(--white-text-color);
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.btn--main:hover {
+  background: var(--white-text-color);
+  color: var(--main-color-light);
+  /* border: 1px solid var(--white-text-color); */
+}
+
+.btn--reverse {
+  background: transparent;
+  color: var(--main-color-light);
+  border: 1px solid var(--main-color-light);
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.btn--reverse:hover {
+  background: var(--main-color-light);
+  color: var(--white-text-color);
+  /* border: 1px solid var(--white-text-color); */
 }
 
 /*  animations */
