@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
-:root {
-  --main-color: #f5427a;
-  --main-color-light: #f56e99;
-  --main-color-light-alpha: #f56e99d4;
-  --main-color-dark: #c2325d;
-  --white-text-color: rgb(255, 255, 255);
-}
+@import url(variables.css);
 
 html {
   height: 100%;
@@ -61,7 +54,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(./src/cascadeFountain.jpg);
+  background: url(/src/images/cascadeFountain.jpg);
+  background-color: rgba(17, 17, 17, 0.74);
+  background-blend-mode: overlay;
   height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -201,7 +196,7 @@ body {
   width: 50%;
 }
 .presentation__information__image {
-  background-image: url(./src/modernCar.jpg);
+  background-image: url(/src/images/modernCar.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -245,6 +240,7 @@ body {
   justify-content: center;
 }
 .gallery__content__items {
+  margin: 100px 0;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -254,8 +250,8 @@ body {
 .gallery__header {
   text-align: center;
   color: var(--main-color);
-  font-size: 1.4rem;
-  margin: 0;
+  font-size: 1.8rem;
+  margin: 0 0 20px 0;
 }
 .gallery__story {
   text-align: center;

@@ -1,0 +1,67 @@
+@import url(style.css);
+
+.head {
+  background: url(../images/historyYerevan.jpg);
+  background-color: rgba(17, 17, 17, 0.74);
+  background-blend-mode: overlay;
+  background-position: 0 80%;
+}
+.greeting-block__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.greeting__desc {
+  font-size: 1.5rem;
+  color: var(--main-color-light);
+  width: 50%;
+  text-align: center;
+}
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.presentation__header {
+  margin: 100px 0;
+  color: var(--main-color-light);
+}
+.presentation__header h2 {
+  margin: 0;
+}
+.presentation__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.presentation__story,
+.presentation__image {
+  width: 50%;
+}
+.presentation__image img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.presentation__part {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* background: var(--main-color-light); */
+}
+.presentation__story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.presentation__story p {
+  width: 80%;
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--main-color);
+}
