@@ -33,10 +33,11 @@
   margin: 0;
 }
 .presentation__content {
-  width: 100%;
+  width: var(--content-width);
   display: flex;
   flex-direction: column;
 }
+
 .presentation__story,
 .presentation__image {
   width: 50%;
@@ -59,9 +60,9 @@
   align-items: center;
   justify-content: center;
 }
-.presentation__story p {
+.presentation__info {
   width: 80%;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 14px;
   color: var(--main-color);
 }

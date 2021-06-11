@@ -1,0 +1,41 @@
+@import url(./history.css);
+
+.head {
+  background: url(../images/erevan_sky.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: rgba(17, 17, 17, 0.74);
+  background-blend-mode: overlay;
+  height: 60vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.presentation {
+  width: var(--content-width);
+  margin: auto;
+}
+.presentation__table-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.presentation__table {
+  width: 100%;
+}
+
+.presentation__table thead {
+  color: var(--main-color-dark);
+}
+.presentation__table td {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.presentation__table {
+  color: var(--main-color-light);
+}

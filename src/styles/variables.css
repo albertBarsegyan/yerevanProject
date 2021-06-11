@@ -1,7 +1,10 @@
 :root {
+  /* colors */
   --main-color: #f5427a;
   --main-color-light: #f56e99;
   --main-color-light-alpha: #f56e99d4;
   --main-color-dark: #c2325d;
   --white-text-color: rgb(255, 255, 255);
+  /* width */
+  --content-width: 60%;
 }
