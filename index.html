@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/style.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="media.css">
+    <link rel="stylesheet" type="text/css" href="./src/styles/style.css" />
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
@@ -17,7 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Noto+Sans+HK:wght@300&display=swap"
         rel="stylesheet">
     <!-- <link rel="icon" href="./src/yerevan_logo2.jpg" type="image/icon type"> -->
-
+    <!-- Favicon start -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./src/favicon.ico/favicon.ico" type="image/x-icon">
+    <!-- Favicon end -->
     <title>Yerevan Page</title>
 </head>
 
@@ -167,14 +169,15 @@
                 <div class="head__menu-container">
                     <nav class='head__menu'>
                         <div class='head__logo'><a class="head__logo__link" href="index.html" style='display: block;'>
-                                <img class="head__logo__image" width='100' src="src/logoLigth.png" alt="Yerevan">
-                                <img class="head__logo__image--reverse" width='100' src="src/logoLigthReverse.png"
-                                    alt="Yerevan">
+                                <img class="head__logo__image" width='100' src="src/images/logoLigth.png" alt="Yerevan">
+                                <img class="head__logo__image--reverse" width='100'
+                                    src="src/images/logoLigthReverse.png" alt="Yerevan">
 
                             </a></div>
                         <ul class=" head__menu__ul">
-                            <li class="head__menu__li"><a class="head__menu__link" href="#">Home</a></li>
-                            <li class="head__menu__li"><a class="head__menu__link" href="#">History</a></li>
+                            <li class="head__menu__li"><a class="head__menu__link" href="./index.html">Home</a></li>
+                            <li class="head__menu__li"><a class="head__menu__link" href="./history.html">History</a>
+                            </li>
                             <li class="head__menu__li"><a class="head__menu__link" href="#">Places</a></li>
                             <li class="head__menu__li"><a class="head__menu__link" href="#">Contact</a></li>
                             <li class="head__menu__li"><a class="head__menu__link" href="#">About</a></li>
@@ -183,8 +186,10 @@
                 </div>
                 <div class='greeting-block'>
                     <div class="greeting-block__content">
-                        <h1 class="greeting-block__header">Welcome to Yerevan</h1>
 
+                        <h1 class="greeting-block__header">Welcome to Yerevan</h1>
+                        <p class="greeting-block__desc">Yerevan is the capital and largest city of
+                            Armenia and one of the world's oldest continuously inhabited cities.</p>
                     </div>
                 </div>
             </div>
@@ -192,7 +197,8 @@
         <div class="presentation">
             <div class="presentation__row">
                 <div class="presentation__block">
-                    <div class='presentation__logo'><img src="./src/tamanyan.jpg" alt="Tamanyan Statue" height="150">
+                    <div class='presentation__logo'><img src="./src/images/tamanyan.jpg" alt="Tamanyan Statue"
+                            height="150">
                     </div>
                     <div>
                         <h2 class='presentation__header'>Alexander Tamanyan</h2>
@@ -205,7 +211,7 @@
                     </div>
                 </div>
                 <div class="presentation__block">
-                    <div class='presentation__logo'><img src="./src/inside-the-matenadaran.jpg" alt="Matenadaran"
+                    <div class='presentation__logo'><img src="./src/images/inside-the-matenadaran.jpg" alt="Matenadaran"
                             height="150"></div>
                     <div>
                         <h2 class='presentation__header'>Matenadaran</h2>
@@ -219,7 +225,7 @@
                     </div>
                 </div>
                 <div class="presentation__block">
-                    <div class='presentation__logo'><img src="./src/motherArmenia.jpg" alt="Mother Armenia"
+                    <div class='presentation__logo'><img src="./src/images/motherArmenia.jpg" alt="Mother Armenia"
                             height="150">
                     </div>
                     <h2 class='presentation__header'>Mother Armenia statue</h2>
