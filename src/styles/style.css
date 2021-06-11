@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url(variables.css);
+@import url(./variables.css);
 
 html {
   height: 100%;
@@ -54,7 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(/src/images/cascadeFountain.jpg);
+  background: url(../images/cascadeFountain.jpg);
   background-color: rgba(17, 17, 17, 0.74);
   background-blend-mode: overlay;
   height: 60vh;
@@ -204,7 +204,7 @@ body {
   width: 50%;
 }
 .presentation__information__image {
-  background-image: url(/src/images/modernCar.jpg);
+  background-image: url(../images/modernCar.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
