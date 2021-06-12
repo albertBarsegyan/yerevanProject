@@ -94,3 +94,6 @@
 .gallery__row2 {
   grid-template-columns: 1fr;
 }
+.footer__main-section {
+  grid-template-columns: 1fr;
+}

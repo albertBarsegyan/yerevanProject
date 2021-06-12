@@ -364,15 +364,11 @@ footer {
 
 /* footer main section */
 .footer__main-section {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   padding: 40px 0 40px 0;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .footer__link {
