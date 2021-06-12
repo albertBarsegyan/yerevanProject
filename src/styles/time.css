@@ -1,0 +1,64 @@
+@import url(./contact.css);
+
+.head {
+  display: block;
+  background: transparent;
+  height: auto;
+}
+
+/* Clock start */
+.clock-constructor {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/watch.jpg);
+}
+.clock {
+  position: relative;
+  margin: 0 auto;
+  padding: 2em;
+  width: 100px;
+  height: 100px;
+}
+.clock-face {
+  background: transparent;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+}
+.bolt {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #222;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hand {
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  width: 45%;
+  left: 5%;
+  background-color: #333;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.015s cubic-bezier(0, 2.85, 0.25, 1);
+}
+.hour-hand {
+  width: 35%;
+  left: 15%;
+}
+.min-hand {
+  width: 40%;
+  left: 10%;
+}
+.sec-hand {
+  background-color: #d44242;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+/* Clock end */

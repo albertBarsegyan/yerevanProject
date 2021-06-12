@@ -38,3 +38,8 @@
 .presentation__table {
   color: var(--main-color-light);
 }
+@media screen and (max-width: 992px) {
+  .greeting__desc {
+    width: 100%;
+  }
+}
