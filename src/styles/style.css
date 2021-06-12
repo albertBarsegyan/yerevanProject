@@ -236,13 +236,14 @@ body {
   background: var(--main-color-light);
 }
 .presentation__information__header {
+  margin: 20px 0;
   font-size: 1.5rem;
   color: var(--white-text-color);
 }
 
 .presentation__information__story {
   width: 80%;
-  margin: auto;
+  margin: 0 auto 20px auto;
   text-align: center;
   color: var(--white-text-color);
   font-size: 1rem;
