@@ -6,6 +6,7 @@
   --main-color-dark: #c2325d;
   --white-text-color: rgb(255, 255, 255);
   --main-background: rgba(245, 110, 153, 0.397);
+  --main-background-dark-opacity: #c2325d78;
   /* width */
   --content-width: 60%;
 }

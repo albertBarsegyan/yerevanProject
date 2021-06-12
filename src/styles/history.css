@@ -66,3 +66,26 @@
   font-size: 14px;
   color: var(--main-color);
 }
+@media screen and (max-width: 992px) {
+  .presentation__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .presentation__part {
+    flex-direction: column;
+  }
+  .presentation__part:last-child {
+    flex-direction: column-reverse;
+  }
+  .presentation__info {
+    font-size: 1.2rem;
+  }
+  .presentation__story {
+    margin: 20px 0;
+  }
+  .presentation__story,
+  .presentation__image {
+    width: 60%;
+  }
+}

@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./src/styles/style.css" />
 
+    <link rel="stylesheet" type="text/css" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/media.css" media="screen and (max-width:992px)">
     <!-- Normalizer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
@@ -180,15 +181,25 @@
                                     src="src/images/logoLigthReverse.png" alt="Yerevan">
 
                             </a></div>
-                        <ul class=" head__menu__ul">
-                            <li class="head__menu__li"><a class="head__menu__link" href="./index.html">Home</a></li>
-                            <li class="head__menu__li"><a class="head__menu__link" href="./history.html">History</a>
-                            </li>
-                            <li class="head__menu__li"><a class="head__menu__link" href="./places.html">Places</a></li>
-                            <li class="head__menu__li"><a class="head__menu__link" href="./contacts.html">Contact</a>
-                            </li>
-                            <li class="head__menu__li"><a class="head__menu__link" href="#">About</a></li>
-                        </ul>
+                        <div class="head__menu-content">
+                            <div class="head__menu__icon"><button type="button" id="icon" class="icon">
+                                    <i class="fa fa-bars"></i>
+                                </button></li>
+                            </div>
+                            <ul class="head__menu__ul">
+                                <li class="head__menu__li"><a class="head__menu__link" href="./index.html">Home</a>
+                                </li>
+                                <li class="head__menu__li"><a class="head__menu__link" href="./history.html">History</a>
+                                </li>
+                                <li class="head__menu__li"><a class="head__menu__link" href="./places.html">Places</a>
+                                </li>
+                                <li class="head__menu__li"><a class="head__menu__link"
+                                        href="./contacts.html">Contact</a>
+                                </li>
+                                <li class="head__menu__li"><a class="head__menu__link" href="./time.html">Time</a></li>
+
+                            </ul>
+                        </div>
                     </nav>
                 </div>
                 <div class='greeting-block'>
@@ -268,10 +279,9 @@
             <div class="gallery__content">
                 <div class="gallery__content__items">
                     <h3 class="gallery__header">Everyday Yerevan</h3>
-                    <p class="gallery__story">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-                        libero esse quasi
-                        aspernatur
-                        ab doloribus, excepturi blanditiis nobis maiores corporis!</p>
+                    <p class="gallery__story">Being such a small city, almost everything is in walking distance from
+                        each other. And if you’re done walking around Yerevan, it’s easy to get a taxi and go on one of
+                        the many day trips that can be done from Yerevan.</p>
                 </div>
                 <div class="wrapper">
                     <div class="gallery__pictures">
@@ -306,55 +316,59 @@
             </div>
         </div>
         <footer>
-            <div class="footer__wrapper">
-                <section class='footer__main-section'>
-                    <div class="footer__main-section__div-1">
-                        <h2>LOGO YEREVAN</h2>
-                        <p>
-                            Onetel is free Bootstrap v3.3.5 HTML5 layout from templatemo website. Feel free to use it
-                            for
-                            your website.
-                        </p>
-                        <ul class="footer__list">
-                            <li><i class="fas fa-phone-alt"></i> <span><a href="#"
-                                        class="footer__link">+37494735568</a></span></li>
-                            <li><i class="far fa-envelope"></i> <span><a href="#"
-                                        class="footer__link">info@company.com</a></span></li>
-                            <li><i class="fas fa-globe-americas"></i> <span><a href="#"
-                                        class="footer__link">www.info.com</a></span></li>
-                        </ul>
+            <div class="footer--back">
+                <div class="footer__wrapper">
+                    <section class='footer__main-section'>
+                        <div class="footer__main-section__div-1">
+                            <img class="head__logo__image" width='100' src="src/images/logoLigth.png" alt="Yerevan">
+                            <p>
+                                Onetel is free Bootstrap v3.3.5 HTML5 layout from templatemo website. Feel free to use
+                                it
+                                for
+                                your website.
+                            </p>
+                            <ul class="footer__list">
+                                <li><i class="fas fa-phone-alt"></i> <span><a href="#"
+                                            class="footer__link">+37494735568</a></span></li>
+                                <li><i class="far fa-envelope"></i> <span><a href="#"
+                                            class="footer__link">info@company.com</a></span></li>
+                                <li><i class="fas fa-globe-americas"></i> <span><a href="#"
+                                            class="footer__link">www.info.com</a></span></li>
+                            </ul>
+                        </div>
+                        <div class="footer__main-section__div-2">
+                            <h2>Useful Links</h2>
+                            <ul class="footer__list">
+                                <li><a href="#" class="footer__link">HTML5 Templates</a></li>
+                                <li><a href="#" class="footer__link">CSS3 Tricks</a></li>
+                                <li><a href="#" class="footer__link">Design Blog</a></li>
+                                <li><a href="#" class="footer__link">Animations</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__main-section__div-3">
+                            <h2>Newsletter</h2>
+                            <p>Visit and see pink world.
+                            </p>
+                            <form class="footer__form">
+                                <input type="text" name="Email" class="enter-email">
+                                <button class="enter-email">Submit</button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+                <section class='footer__foot-section'>
+                    <div class="footer__foot-section_copyright">
+                        <p>Copyright © 2021 Yerevan Project</p>
                     </div>
-                    <div class="footer__main-section__div-2">
-                        <h2>Useful Links</h2>
-                        <ul class="footer__list">
-                            <li><a href="#" class="footer__link">HTML5 Templates</a></li>
-                            <li><a href="#" class="footer__link">CSS3 Tricks</a></li>
-                            <li><a href="#" class="footer__link">Design Blog</a></li>
-                            <li><a href="#" class="footer__link">Animations</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__main-section__div-3">
-                        <h2>Newsletter</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismo.</p>
-                        <form class="footer__form">
-                            <input type="text" name="Email" class="enter-email">
-                            <button class="enter-email">Submit</button>
-                        </form>
+                    <div class="footer__foot-section_social">
+                        <div class="foot-section_social-links"><i class="fab fa-facebook-f"></i></div>
+                        <div class="foot-section_social-links"><i class="fab fa-twitter"></i></div>
+                        <div class="foot-section_social-links"><i class="fab fa-dribbble"></i></div>
+                        <div class="foot-section_social-links"><i class="fab fa-pinterest"></i></div>
                     </div>
                 </section>
-            </div>
-            <section class='footer__foot-section'>
-                <div class="footer__foot-section_copyright">
-                    <p>Copyright © 2084 Yerevan Project</p>
-                </div>
-                <div class="footer__foot-section_social">
-                    <div class="foot-section_social-links"><i class="fab fa-facebook-f"></i></div>
-                    <div class="foot-section_social-links"><i class="fab fa-twitter"></i></div>
-                    <div class="foot-section_social-links"><i class="fab fa-dribbble"></i></div>
-                    <div class="foot-section_social-links"><i class="fab fa-pinterest"></i></div>
-                </div>
-            </section>
         </footer>
+    </div>
     </div>
 
 
