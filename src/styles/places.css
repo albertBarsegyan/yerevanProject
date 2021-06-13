@@ -104,6 +104,13 @@
   color: var(--main-color-light);
 }
 @media screen and (max-width: 600px) {
+  /* .greeting-block {
+    height: ;
+  } */
+  .presentation__table td {
+    font-size: 1rem !important;
+    padding: 5px 10px;
+  }
   .presentation {
     width: 100% !important;
   }

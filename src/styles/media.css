@@ -49,6 +49,9 @@
   text-align: center;
 }
 
+.greeting__desc {
+  width: 90%;
+}
 /* presentation block */
 .presentation__row {
   display: flex;
