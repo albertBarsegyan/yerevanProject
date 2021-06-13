@@ -24,7 +24,7 @@ function stopLoader() {
     }, 3000);
   }, 100);
 }
-// stopLoader();
+stopLoader();
 
 // Menu icon event
 menuIcon.addEventListener('click', () => {

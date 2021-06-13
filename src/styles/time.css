@@ -10,15 +10,13 @@
   position: relative;
   z-index: 2;
 }
-.head__menu__ul {
-  margin: 50px 0 !important;
-}
+
 .head__menu--responsive {
   top: 100%;
 }
 .clock-desc {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   margin: auto;
   margin: 50px 0;
 }
@@ -65,7 +63,7 @@
   top: 49%;
   left: 50.5%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 1;
 }
 .clock-face {
   background: transparent;
@@ -123,6 +121,9 @@
   .clock__info::before {
     display: none;
   }
+  .head__menu__ul {
+    margin: 50px 0 !important;
+  }
 }
 @media screen and (max-width: 768px) and (min-width: 500px) {
   .clock {
@@ -133,6 +134,9 @@
   }
   .clock__info::before {
     display: none;
+  }
+  .head__menu__ul {
+    margin: 50px 0 !important;
   }
 }
 
@@ -145,6 +149,9 @@
   }
   .clock__info::before {
     display: none;
+  }
+  .head__menu__ul {
+    margin: 50px 0 !important;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 992px) {

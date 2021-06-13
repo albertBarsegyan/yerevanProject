@@ -16,7 +16,7 @@ body {
 }
 
 .loader {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -52,8 +52,8 @@ body {
 
 /* main content */
 .main {
-  display: block;
-  opacity: 1;
+  display: none;
+  opacity: 0;
   transition: 0.5s;
 }
 
