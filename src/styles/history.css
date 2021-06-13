@@ -62,7 +62,7 @@
 }
 .presentation__info {
   width: 80%;
-  text-align: center;
+  text-align: left;
   font-size: 14px;
   color: var(--main-color);
 }

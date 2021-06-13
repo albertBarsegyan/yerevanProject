@@ -591,3 +591,76 @@ footer {
   -webkit-animation: lol 3s 500ms infinite ease-in-out;
   animation: lol 3s 500ms infinite ease-in-out;
 }
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .head__menu__ul {
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .head {
+    height: auto;
+  }
+  .head__menu {
+    width: 100%;
+  }
+  .head__menu--responsive {
+    top: 10% !important;
+    left: calc(50% - 60px);
+  }
+  .greeting-block__content {
+    width: 90%;
+  }
+  .greeting-block__desc {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .presentation__block {
+    width: 90% !important;
+  }
+  .presentation__information {
+    width: 90%;
+  }
+  .gallery__story {
+    width: 100%;
+  }
+  /* Story */
+  .presentation__story,
+  .presentation__image {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .head {
+    height: auto;
+  }
+  .head__menu {
+    width: 100%;
+  }
+  .head__menu--responsive {
+    top: 10% !important;
+    left: calc(50% - 60px);
+  }
+  .greeting-block__content {
+    width: 90%;
+  }
+  .greeting-block__desc {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .presentation__block {
+    width: 90% !important;
+  }
+  .presentation__information {
+    width: 90%;
+  }
+  .gallery__story {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  .head {
+    height: auto;
+  }
+}

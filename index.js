@@ -27,10 +27,20 @@ function stopLoader() {
 menuIcon.addEventListener('click', () => {
   const headMenuContainer = document.querySelector('.head__menu__ul');
   if (headMenuContainer.classList.contains('head__menu--responsive')) {
-    headMenuContainer.classList.remove('head__menu--responsive');
-    headMenuContainer.style.display = 'none';
+    setTimeout(() => {
+      headMenuContainer.style.opacity = 0;
+    }, 300);
+    setTimeout(() => {
+      headMenuContainer.style.display = 'none';
+    }, 850);
+    setTimeout(() => {
+      headMenuContainer.classList.remove('head__menu--responsive');
+    }, 900);
   } else {
     headMenuContainer.style.display = 'flex';
+    setTimeout(() => {
+      headMenuContainer.style.opacity = 1;
+    }, 100);
     headMenuContainer.classList.add('head__menu--responsive');
   }
 });
