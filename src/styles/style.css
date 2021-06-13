@@ -20,10 +20,13 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  opacity: 90%;
+  opacity: 0;
   transition: 1s;
   height: 100vh;
   overflow: hidden;
+}
+.loader-pos {
+  transform: translate(0, -50%);
 }
 
 .loader_logo {
@@ -31,16 +34,18 @@ body {
 }
 
 .loader_logo svg {
-  fill: #333;
+  fill: var(--main-color-dark);
 }
 
 /* Second loader */
 .cs-loader {
-  color: #333;
+  color: var(--main-color-dark);
+  width: 100%;
+  text-align: center;
 }
 
 .cs-loader label {
-  font-size: 0.625rem;
+  font-size: 1rem;
   opacity: 0;
   display: inline-block;
 }
@@ -49,7 +54,7 @@ body {
 .main {
   display: block;
   opacity: 1;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 /* head part */
@@ -364,15 +369,11 @@ footer {
 
 /* footer main section */
 .footer__main-section {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   padding: 40px 0 40px 0;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .footer__link {
@@ -594,4 +595,83 @@ footer {
 .cs-loader label:nth-child(1) {
   -webkit-animation: lol 3s 500ms infinite ease-in-out;
   animation: lol 3s 500ms infinite ease-in-out;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .head__menu__ul {
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .head {
+    height: auto;
+  }
+  .head__menu {
+    width: 100%;
+  }
+  .head__menu--responsive {
+    top: 10% !important;
+    left: calc(50% - 60px);
+  }
+  .greeting-block__content {
+    width: 90%;
+  }
+  .greeting-block__desc {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .presentation__block {
+    width: 90% !important;
+  }
+  .presentation__information {
+    width: 100% !important;
+  }
+  .gallery__story {
+    width: 100%;
+  }
+  .gallery__story {
+    width: 90%;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  /* Story */
+  .presentation__story,
+  .presentation__image {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .head {
+    height: auto;
+  }
+  .head__menu {
+    width: 100%;
+  }
+  .head__menu--responsive {
+    top: 10% !important;
+    left: calc(50% - 60px);
+  }
+  .greeting-block__content {
+    width: 90%;
+  }
+  .greeting-block__desc {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .presentation__block {
+    width: 90% !important;
+  }
+  .presentation__information {
+    width: 90%;
+  }
+  .gallery__story {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  .head {
+    height: auto;
+  }
 }

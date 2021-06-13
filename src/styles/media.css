@@ -19,12 +19,16 @@
 }
 .head__menu__ul {
   display: none;
+  opacity: 0;
+  transition: all 1s;
 }
 
 .head__menu--responsive {
   position: absolute;
+  transition: all 0.3s;
+  opacity: 0;
   display: none;
-  top: 5%;
+  top: 10%;
   align-items: normal;
   justify-content: center;
   flex-direction: column;
@@ -93,4 +97,10 @@
 }
 .gallery__row2 {
   grid-template-columns: 1fr;
+}
+.footer__main-section {
+  grid-template-columns: 1fr;
+}
+.footer__foot-section_social {
+  width: 100%;
 }
