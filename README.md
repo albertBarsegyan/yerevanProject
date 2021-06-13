@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://albertbarsegyan.github.io/yerevanProject/">
-    <img src="./src/images/logoLigthReverse.png" alt="Logo" width="100" height="80">
+    <img src="./src/images/logoLigthReverse.png" alt="Logo" width="150" height="80">
   </a>
 
  <h3 align="center">Interesting project about Yerevan</h3>
