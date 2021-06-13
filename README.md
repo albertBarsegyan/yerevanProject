@@ -9,6 +9,10 @@
 
 ![Yerevan](./src/screenshot/screenshot.png)
 
+Working clock inside project
+
+![Clock](./src/screenshot/clock.png)
+
 ### Built With
 
 This project was prepared to present Yerevan to the public.
