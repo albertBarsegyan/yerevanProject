@@ -7,7 +7,7 @@
 
 ## About The Project
 
-![Yerevan](./screenshot/screenshot.png)
+![Yerevan](./src/screenshot/screenshot.png)
 
 ### Built With
 
