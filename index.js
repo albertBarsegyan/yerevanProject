@@ -10,16 +10,19 @@ const menuIcon = document.querySelector('#icon');
 function stopLoader() {
   setTimeout(() => {
     setTimeout(() => {
+      loaderContainer.style.opacity = 1;
+    }, 100);
+    setTimeout(() => {
       loaderContainer.style.opacity = 0;
-    }, 1000);
+    }, 2000);
     setTimeout(() => {
       loaderContainer.style.display = 'none';
-    }, 1500);
+    }, 2500);
     mainContainer.style.display = 'block';
     setTimeout(() => {
       mainContainer.style.opacity = 1;
-    }, 2000);
-  }, 4000);
+    }, 3000);
+  }, 100);
 }
 // stopLoader();
 
